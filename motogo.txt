@@ -1,0 +1,45 @@
+Cadastrar novo usuario
+http://localhost:5079/MotoGoApi/NovoUsuario, {
+  "nome": "string",
+  "email": "string",
+  "senha": "string",
+  "telefone": "stringst",
+  "meioDePagamentoPadrao": 0
+}
+
+Nome, email e senha não podem ser iguais a alguma já cadastrado no banco.
+Telefone minimo de 8 caracteres e envido como string(texto) 
+"meioDePagamentoPadrao": 
+	0 = Dinheiro,
+        1 = Pix,
+        2 = Debito,
+        3 = Credito
+enviado como número
+   
+
+Receber todos os usuarios cadastrados
+http://localhost:5079/MotoGoApi/TodosUsuarios
+
+
+Receber usuario por id
+http://localhost:5079/MotoGoApi/UsuarioPorId?id=(numero)
+
+Receber usuario por nome
+http://localhost:5079/MotoGoApi/UsuarioPorNome?nome=(string)
+
+Cadastrar novo endereço de usuario
+http://localhost:5079/MotoGoApi/CadastrarEnderecoUsuario?idUsuario=(número)&logradouro=(string)&numero=(numero)&bairro=(string)&cep=(string)&cidade=(string)&uf=(string)
+
+O id do usuario ja deve constar na tabela usuario, 
+CEP é enviando como string(texto)
+Uf no maximo 3 caracteres
+
+Buscar endereço do usuario por id
+http://localhost:5079/MotoGoApi/BuscarEnderecoUsuarioPorId?id=(numero)
+
+retorna todos os enderecos castrados com o id do usuario
+ 
+
+-------------------------------------
+
+Cadastrar novo entregador

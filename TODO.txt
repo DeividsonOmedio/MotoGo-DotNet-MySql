@@ -1,0 +1,22 @@
+'cpf entregador int -> string
+idenderecoretiradas -> tira plural
+enderecoentredasId -> tirar plural
+statusPedidp -> cli entr
+
+
+
+cif&fob administracao
+
+Tabela de valor por peso
+Peso da mercadoria Valor
+Menos de 1Kg R$3,00
+Entre 1Kg e 3Kg R$5,00
+Entre 3Kg e 8Kg R$9,00
+Entre 8Kg e 12Kg R$12,00
+Acima de 12Kg Não é possível transportar
+
+Tabela de preço por km rodado
+1 Km rodado R$0,50
+
+Tabela de preço por tempo de deslocamento
+1 minuto de deslocamento R$0,30
